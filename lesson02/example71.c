@@ -11,6 +11,16 @@ int main()
 		printf("请输入要求输出元素的行列号:\n");
 		scanf("%d,%d",&i,&j);
 		printf("a[%d,%d]=%d\n",i,j,*(*(p+i)+j));
+		printf("%p\n",p+i);
+		printf("=======================\n");
+		for(i=0;i<ROW;i++)
+		{
+				//printf("%p\n",p+i);
+				for(j = 0;j < COLUMN;j++)
+				{
+						printf("%p\n",*(p+i)+j);
+				}
+		}
 
 		return 0;
 }
