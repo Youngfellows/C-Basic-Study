@@ -10,10 +10,10 @@ int main()
 		printf("请输入一个%d*%d的整型数组:\n",M,N);
 		for(i=0;i<M;i++)
 		{
-				for(j=0;j<N;j++)
-				{
-					scanf("%d",&x[i][j]);
-				}
+			for(j=0;j<N;j++)
+			{
+				scanf("%d",&x[i][j]);
+			}
 			
 		}
 		printf("打印数组x:\n");

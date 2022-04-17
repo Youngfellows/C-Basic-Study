@@ -1,6 +1,10 @@
 #include<stdlib.h>
 #include<stdio.h>
 
+/**
+ * @brief 定义枚举
+ * 
+ */
 enum week
 {
 		SUN,MON,TUE,WED,THU,FRI,SAT

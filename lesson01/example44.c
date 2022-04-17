@@ -9,6 +9,7 @@ int main()
 		int i;
 		for(i=0;i<strlen(address);i++)
 		{
+			//是字母
 			if(isalpha(address[i]))
 			{
 				printf("%c is alpha ...\n",address[i]);

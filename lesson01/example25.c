@@ -16,6 +16,7 @@ int main()
 			p1 = &array[i][COLUMN-1];
 			for(p2 = &array[i][0];p2<p1;p2++)
 			{
+					printf("%d ",**p);
 					if(**p>=max)
 					{
 							max = **p;
@@ -23,6 +24,7 @@ int main()
 							column = COLUMN - (p1 - p2);
 					}
 			}
+			printf("%d\n",*p1);
 		}
 		printf("max:%d,row:%d,column:%d\n",max,row,column);
 

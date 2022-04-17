@@ -11,7 +11,7 @@ int main()
 		array[2] = temp;
 		for(i=0;i<3;i++)
 		{
-				printf("array[%d]=%d\n",i,array[i]);
+			printf("array[%d]=%d\n",i,array[i]);
 		}
 	return 0;
 }

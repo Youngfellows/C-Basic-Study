@@ -11,7 +11,7 @@ int main()
 		printf("请输入number:\n");
 		scanf("%d",pa);
 		result = recursion(*pa);
-		printf("result=%d\n",result);
+		printf("result,%d!=%d\n",*pa,result);
 
 		return 0;
 }

@@ -3,6 +3,9 @@
 
 #define LEN 20
 
+/**
+ * @brief 结构体学生
+ */
 struct student
 {
 		int id;
@@ -22,6 +25,7 @@ int main()
 		p2 = &stu2;
 		p3 = &stu3;
 
+		//结构体变量的三种使用方式
 		printf("ID\t Name\t Sex\t Score\n");
 		printf("%d\t %s\t %s\t %.1f\n",stu1.id,stu1.name,stu1.sex,stu1.score);
 		printf("%d\t %s\t %s\t %.1f\n",(*p2).id,(*p2).name,(*p2).sex,(*p2).score);

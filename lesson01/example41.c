@@ -18,6 +18,8 @@ int main()
 		struct student stu;
 		struct student *p;
 		p = &stu;
+
+		//通过指针为结构体变量赋值
 		p->id = 101;
 		strcpy(p->name,"秋婷");
 		strcpy(p->sex,"女");

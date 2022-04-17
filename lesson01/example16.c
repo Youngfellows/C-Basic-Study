@@ -6,7 +6,7 @@ int main()
 		int i;
 		int *pm;
 		pm = array;
-		for(i=0;i<5;i++)
+		for(i=0;i<sizeof(array)/sizeof(array[0]);i++)
 		{
 			printf("%d,&array[%d]=%p,%d\n",i,i,&array[i],array[i]);
 		}

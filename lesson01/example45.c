@@ -9,7 +9,7 @@ int main()
 		{
 			fflush(stdin);
 			printf("请输入一个字符:\n");	
-			input = getchar();
+			input = getchar();//获取一个字符
 			getchar();//消除换行或者回车
 			//scanf("%c",&input);
 			printf("%c %s数字\n",input,isdigit(input)?"是":"不是");

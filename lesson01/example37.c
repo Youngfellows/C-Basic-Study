@@ -1,12 +1,12 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-typedef int (*FuncType)(int,int);
+typedef int (*FuncType)(int,int);//函数指针,指向的是函数
 int add(int,int);
 int sub(int,int);
 int ride(int,int);
 int divide(int,int);
-int func(FuncType,int,int);
+int func(FuncType,int,int);//函数指针作为函数的参数
 
 int main()
 {
@@ -48,5 +48,6 @@ int divide(int a,int b)
 
 int func(FuncType p,int a,int b)
 {
+	//通过函数指针调用函数
 	return (*p)(a,b);
 }

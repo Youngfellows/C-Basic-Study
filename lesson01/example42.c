@@ -16,8 +16,10 @@ struct student
 int main()
 {
 		struct student stu[AMOUNT];
-		struct student *p[AMOUNT];
 		struct student *pt;
+		//指向结构体student类型的指针数组,在这里,把p声明为一个数组，由 AMOUNT 个结构体student类型指针组成。
+		//因此，p中的每个元素，都是一个指向结构体student类型值的指针。
+		struct student *p[AMOUNT];
 		int i,j,k;
 		double total = 0.0;
 
@@ -26,7 +28,7 @@ int main()
 
 		for(i=0;i<AMOUNT;i++)
 		{
-				p[i] = &stu[i];
+				p[i] = &stu[i];//p中的每个元素，指向结构体student类型值的指针,即指向数组中的每一个元素
 				scanf("%d %s %s %lf",&stu[i].id,stu[i].name,stu[i].sex,&stu[i].score);
 				total += p[i]->score;
 		}
@@ -39,6 +41,7 @@ int main()
 				{
 						if((p[i]->score) > (p[j]->score))
 						{
+							//交换指针的指向
 							pt = p[i];
 							p[i] = p[j];
 							p[j] = pt;
@@ -48,7 +51,8 @@ int main()
 
 		for(i=0;i<AMOUNT;i++)
 		{
-			printf("%d\t %s\t %s\t %.2f\n",(*p[i]).id,(*p[i]).name,(*p[i]).sex,(*p[i]).score);
+			//printf("%d\t %s\t %s\t %.2f\n",(*p[i]).id,(*p[i]).name,(*p[i]).sex,(*p[i]).score);
+			printf("%d\t %s\t %s\t %.2f\n",p[i]->id,p[i]->name,p[i]->sex,p[i]->score);
 		}
 
 

@@ -33,7 +33,7 @@ int main()
 				}
 		}
 
-		printf("***************\n");
+		printf("\n***************\n");
 		for(i=0;i<M;i++)
 		{
 				printf("%d ",*(p+i));

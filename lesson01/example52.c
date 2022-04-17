@@ -24,10 +24,10 @@ void strcpy1()
 		char str[] = "huawei is a great company!!!";
 		char dest[SIZE];
 		char *ps,*pd,*p;
-		ps = str;
-		pd = dest;
+		ps = str;//字符型指针变量ps指向字符串str
+		pd = dest;//字符型指针变量ps指向字符串dest
 
-		p = memcpy(pd,ps,strlen(ps));
+		p = memcpy(pd,ps,strlen(ps));//拷贝字符串
 		dest[strlen(ps)] = '\0';
 		fputs(pd,stdout);
 		printf("\n");
@@ -41,8 +41,8 @@ void strcpy2()
 		ps = str;
 		pd = dest;
 
-		p = memcpy(pd,ps,5);
-		dest[5] = '\0';
+		p = memcpy(pd,ps,5);//拷贝字符串5个字符
+		dest[5] = '\0';//添加字符串结束标志
 		fputs(pd,stdout);
 		printf("\n");
 }
@@ -55,8 +55,8 @@ void strcpy3()
 		ps = str;
 		pd = dest;
 
-		p = memcpy(pd,ps+3,3);
-		dest[3] = '\0';
+		p = memcpy(pd,ps+3,3);//从第3个字符开始拷贝,只拷贝3个字符
+		dest[3] = '\0';//添加字符串结束标志
 		fputs(pd,stdout);
 		printf("\n");
 }

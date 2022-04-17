@@ -4,7 +4,8 @@
 extern int avg();
 
 int main()
-{
+{	
+	//编译gcc example34.c example33.c 
 	int a,b,result;
 	int *pa,*pb;
 	pa = &a;
