@@ -7,8 +7,8 @@ int main()
 		int *p1,*p2,*pt;
 		a = 7;
 		b = 6;
-		p1 = &a;
-		p2 = &b;
+		p1 = &a;//int 型指针变量p1指向整数a
+		p2 = &b;//int 型指针变量p2指向整数b
 
 		printf("&a=%p,&b=%p\n",&a,&b);
 		printf("a=%d,b=%d\n",a,b);
@@ -16,6 +16,7 @@ int main()
 
 		if(*p1 > *p2)
 		{
+			//交换指针变量的指向
 			pt = p1;
 			p1 = p2;
 			p2 = pt;

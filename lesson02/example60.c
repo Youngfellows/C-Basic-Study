@@ -27,6 +27,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 交换变量,传递地址,只是交换了局部变量,没有改变元素值
+ * 
+ * @param p1 地址1
+ * @param p2 地址2
+ */
 void swap(int *p1,int *p2)
 {
 	int *temp;
