@@ -5,7 +5,7 @@ int max(int,int);
 
 int main()
 {
-	int (*p)(int,int);//定义一个函数指针,函数指针指向函数
+	int (*p)(int,int);//定义一个函数指针p,函数指针指向函数
 	int x,y,result;
 	printf("请输入x和y:\n");
 	scanf("%d,%d",&x,&y);
