@@ -4,14 +4,14 @@
 
 int main()
 {
-		char a[] = "I am a Student.";
-		char b[SIZE];
+		char a[] = "I am a Student.";//定义字符串a
+		char b[SIZE];//定义字符串b
 		int i;
+		//拷贝字符串
 		for(i=0;*(a+i)!='\0';i++)
 		{
 			*(b+i) = *(a+i);
 		}
-
 		*(b+i) = '\0';
 		printf("a:%s\n",a);
 

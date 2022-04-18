@@ -1,6 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+/**
+ * @brief 函数申明,求a/b的最大值
+ * 
+ * @return int 
+ */
 int max(int,int);
 
 int main()

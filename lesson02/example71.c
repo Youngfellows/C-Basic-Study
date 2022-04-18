@@ -18,6 +18,7 @@ int main()
 				//printf("%p\n",p+i);
 				for(j = 0;j < COLUMN;j++)
 				{
+						//打印每个元素的地址信息
 						printf("%p\n",*(p+i)+j);
 				}
 		}

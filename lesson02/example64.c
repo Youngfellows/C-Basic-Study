@@ -25,6 +25,12 @@ int main()
 		printf("\n");
 }
 
+/**
+ * @brief 倒置元素顺序
+ * 
+ * @param arr 数组元素
+ * @param size 数组大小
+ */
 void inv(int arr[],int size)
 {
 		int i,j,temp;

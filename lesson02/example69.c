@@ -30,7 +30,12 @@ int main()
 		return 0;
 }
 
-
+/**
+ * @brief 选择排序
+ * 
+ * @param arr int 类型指针变量,指向的数组元素
+ * @param size 数组元素大小
+ */
 void sort(int *arr,int size)
 {
 		printf("size:%d\n",size);

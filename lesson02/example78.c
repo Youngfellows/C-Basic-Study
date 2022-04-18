@@ -7,12 +7,12 @@ int main()
 
 	//指针一定要定义指向,否则会变成野指针
 	//char a[] = "she is a beautiful girl !!!";
-	//char b[SIZE];
-		char *p1="she is a beautiful girl !!!";
-		char *p2;
+	char b[SIZE];
+	char *p1="she is a beautiful girl !!!";
+	char *p2;
 
 	//p1 = a;
-	//p2 = b;
+	p2 = b;
 
 	for(;*p1 != '\0';p1++,p2++)
 	{

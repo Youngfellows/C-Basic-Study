@@ -2,9 +2,15 @@
 #include<stdlib.h>
 #define SIZE 5
 
+/**
+ * @brief 选择排序法,排序数组
+ * 
+ * @param a 数组
+ * @param size 数组大小
+ */
 void change(int a[],int size)
 {
-		printf("arr size=%d\n",sizeof(a));
+		printf("arr size=%ld\n",sizeof(a));
 		int i,j;
 		for(i=0;i<size;i++)
 		{
@@ -12,6 +18,7 @@ void change(int a[],int size)
 			{
 				if(a[i] > a[j])
 				{
+						//交换数组元素
 						int temp = a[i];
 						a[i] = a[j];
 						a[j] = temp;

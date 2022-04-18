@@ -9,7 +9,10 @@ int main()
 		char b[] ="You are a teacher.";
 		printf("a:%s\n",a);
 		printf("b:%s\n",b);
-	
+
+		char *p = a;
+		printf("%s\n",p);
+
 		copy_string(a,b);
 
 		printf("a:%s\n",a);
@@ -18,6 +21,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 拷贝字符串
+ * 
+ * @param from 源字符串
+ * @param to 目标字符串
+ */
 void copy_string(char from[],char to[])
 {
 	int i = 0;

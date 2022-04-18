@@ -25,20 +25,27 @@ int main()
 		printf("\n");
 }
 
+/**
+ * @brief 交换元素的值
+ * 
+ * @param x int 型指针变量x,指向数组元素
+ * @param size 数组大小
+ */
 void inv(int *x,int size)
 {
 		int *i,*j,*p;
 		int temp;
 		int m;
 
-		m = (size - 1)/2;
+		m = (size - 1)/2;//数组元素的中间位置
 
-		i = x;
-		j = x + size - 1;
-		p = x + m;
+		i = x;//int 型指针变量i,指向数组的首元素
+		j = x + size - 1;//int 型指针变量j,指向数组的最后一个元素
+		p = x + m;//int 型指针变量p,指向数组的中间位置元素
 
 		for(;i <= p;i++,j--)
 		{
+			//交换元素的值
 			temp = *i;
 			*i = *j;
 			*j = temp;

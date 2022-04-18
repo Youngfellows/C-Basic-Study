@@ -12,7 +12,8 @@ int main()
 		point2 = &b;
 		point3 = &c;
 		printf("请输入a:\n");
-		scanf("%d",&a);
+		//scanf("%d",&a);
+		scanf("%d",point1);
 		printf("请输入b:\n");
 		scanf("%d",&b);
 		printf("请输入c:\n");
@@ -30,6 +31,13 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 排序,参数是指针变量,地址
+ * 
+ * @param q1 指针变量q1,地址
+ * @param q2 指针变量q2,地址
+ * @param q3 指针变量q3,地址
+ */
 void sort(int *q1,int *q2,int *q3)
 {
 		if(*q1 < *q2)
@@ -48,6 +56,12 @@ void sort(int *q1,int *q2,int *q3)
 		}
 }
 
+/**
+ * @brief 交换两个变量的值
+ * 
+ * @param p1 指针变量q1,地址
+ * @param p2 指针变量q2,地址
+ */
 void swap(int *p1,int *p2)
 {
 	int temp;

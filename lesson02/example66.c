@@ -16,7 +16,7 @@ int main()
 		}
 		printf("\n");
 		
-		p = array;
+		p = array;//int 型指针变量p,p指向数组array
 		inv(p,sizeof(array)/sizeof(int));
 
 		printf("交互后:\n");
@@ -27,6 +27,12 @@ int main()
 		printf("\n");
 }
 
+/**
+ * @brief 交换元素的值
+ * 
+ * @param x int 型指针变量x,指向数组元素
+ * @param size 数组大小
+ */
 void inv(int *x,int size)
 {
 		int *i,*j,*p;
