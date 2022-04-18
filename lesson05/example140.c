@@ -17,16 +17,28 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 输入数组元素
+ * 
+ * @param array 数组
+ * @param size  数组大小
+ */
 void input(int array[],int size)
 {
 		int i;
 		for(i=0;i<size;i++)
 		{
 				printf("%d,请输入整数:",i);
-				scanf("%d",&array[i]);
+				scanf("%d",&array[i]);//为数组元素赋值
 		}
 }
 
+/**
+ * @brief 打印数组元素
+ * 
+ * @param array 数组
+ * @param size 数组大小
+ */
 void print(int array[],int size)
 {
 

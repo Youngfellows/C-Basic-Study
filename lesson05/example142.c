@@ -65,6 +65,15 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 求两点之间的距离
+ * 
+ * @param x x坐标
+ * @param y y坐标
+ * @param cx x坐标
+ * @param cy x坐标
+ * @return float 两点之间的距离
+ */
 float distance(float x,float y,float cx,float cy)
 {
 		float d = (x - cx)*(x - cx) + (y - cy)*(y - cy);
