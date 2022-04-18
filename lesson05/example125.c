@@ -9,8 +9,9 @@ int main()
 		printf("请输入:\n");
 		scanf("%d %d",&a,&b);
 		scanf("%f %e",&x,&y);
-		scanf("%c%c",&c1,&c2);
-		printf("a=%d,b=%d,x=%f,y=%f,c1=%c,c2=%c\n",a,b,x,y,c1,c2);
+		getchar();//吃掉一个空格
+		scanf("%c %c",&c1,&c2);
+		printf("a=%d,b=%d,x=%.1f,y=%.3f,c1=%c,c2=%c\n",a,b,x,y,c1,c2);
 
 		return 0;
 }

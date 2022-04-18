@@ -2,6 +2,7 @@
 
 int main()
 {
+		//字符串简单加密
 		char c1 = 'C';
 		char c2 = 'h';
 		char c3 = 'i';

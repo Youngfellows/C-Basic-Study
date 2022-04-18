@@ -12,6 +12,13 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 返回最大值
+ * 
+ * @param a 
+ * @param b 
+ * @return int 
+ */
 int max(int a,int b)
 {
 	return a > b? a: b;

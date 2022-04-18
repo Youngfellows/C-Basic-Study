@@ -4,9 +4,9 @@ char ranking(int rank);
 
 int main()
 {
-		float score;
-		char grade;
-		int rank;
+		float score;//成绩
+		char grade;//排名
+		int rank;//等级
 		printf("请输入成绩:");
 		scanf("%f",&score);
 		while(score > 100 || score < 0)
@@ -20,6 +20,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 根据等级排名
+ * 
+ * @param rank 等级
+ * @return char 排名
+ */
 char ranking(int rank)
 {
 	char grade;

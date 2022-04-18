@@ -18,7 +18,7 @@ int main()
 		int thousand;//千位
 		int ten_thousand;//万位
 		int place;//位数
-		int array_five[LEN_FIVE];
+		int array_five[LEN_FIVE];//定义数组长度是5的数组
 		int array_four[LEN_FOUR];
 		int array_three[LEN_THREE];
 		int array_two[LEN_TWO];
@@ -63,6 +63,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 获取一个整数有多少位数
+ * 
+ * @param number 整数
+ * @return int 返回位数个数
+ */
 int get_place(int number)
 {
 		int place;
@@ -86,7 +92,13 @@ int get_place(int number)
 		return place;
 }
 
-//为数组元素赋值
+/**
+ * @brief 为数组元素赋值
+ * 
+ * @param number 数字
+ * @param p 数组
+ * @param size 大小
+ */
 void get_array_place(int number,int *p,int size)
 {
 		int ten_thousand;
@@ -133,6 +145,12 @@ void get_array_place(int number,int *p,int size)
 		}
 }
 
+/**
+ * @brief 打印数组元素
+ * 
+ * @param p 数组
+ * @param size 元素个数
+ */
 void print_place(int *p,int size)
 {
 		int i;
