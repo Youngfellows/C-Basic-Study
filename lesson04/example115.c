@@ -6,15 +6,18 @@ int main()
 		FILE *fp;
 		char ch;
 		char filename[30];
+		char *pf = filename;//char *型指针变量pf,pf指向字符串filename
 
 		printf("请输入要保存的文件名:");
-		scanf("%s",filename);
+		//scanf("%s",filename);
+		fgets(pf,1024,stdin);
 		
 		//消化回车符号
 		getchar();
 
 		//打开文件
-		if((fp = fopen(filename,"w")) == NULL)
+		//if((fp = fopen(filename,"w")) == NULL)
+		if((fp = fopen(pf,"w")) == NULL)
 		{
 			printf("打开文件失败\n");
 			exit(0);
