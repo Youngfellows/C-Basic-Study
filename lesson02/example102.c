@@ -21,7 +21,11 @@ int main()
 		return 0;
 }
 
-
+/**
+ * @brief 找出不及格的数组元素
+ * 
+ * @param p int *类型的指针变量p1,p1可以指向元素是int类型的数组元素
+ */
 void check(int *p)
 {
 	int i;

@@ -16,6 +16,7 @@ int main()
 		{
 			p = search(score+i);
 			
+			//不及格行
 			if(p == *(score +i))
 			{
 				for(j=0;j<COLUMN;j++)
@@ -29,6 +30,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 找出不及格的行数据
+ * 
+ * @param p 指向一维数组的指针变量p,一维数组中有4个元素,每一个元素是int型
+ * @return float* 
+ */
 float *search(float (*p)[4])
 {
 		int i;
@@ -37,9 +44,10 @@ float *search(float (*p)[4])
 
 		for(i=0;i<COLUMN;i++)
 		{
+			//不及格行
 			if(*(*p + i) < 60)
 			{
-					pt = *p;
+					pt = *p;//记录下不及格行地址位置
 			}
 		}
 

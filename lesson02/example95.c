@@ -22,9 +22,16 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 
+ * 
+ * @param p 指向一维数组的指针变量p,一维数组中有4个元素,每一个元素是int型
+ * @param serial_number 查找的序列号
+ * @return float* 
+ */
 float *search(float (*p)[4],int serial_number)
 {
 		float *pt;
-		pt = *(p + serial_number);
+		pt = *(p + serial_number);//找到对应行元素的首行地址
 		return pt;
 }
