@@ -13,11 +13,13 @@ int main()
 		char temp[LEN];
 		int i,j,min;
 		FILE *fp;
+		char *fileName = "./string.dat";//文件名
 
 		printf("请输入字符串:\n");
 		for(i=0;i<SIZE;i++)
 		{
-				gets(str[i]);
+				//gets(str[i]);
+				fgets(str[i],1280,stdin);
 		}
 
 		//排序
@@ -35,6 +37,7 @@ int main()
 
 			if(min != i)
 			{
+				//交换字符串
 				strcpy(temp,str[i]);
 				strcpy(str[i],str[min]);
 				strcpy(str[min],temp);
@@ -44,7 +47,7 @@ int main()
 
 
 		//保存到文件
-		if((fp = fopen("./string.dat","w")) == NULL)
+		if((fp = fopen(fileName,"w")) == NULL)
 		{
 			printf("打开文件失败\n");
 			exit(0);
@@ -54,8 +57,9 @@ int main()
 		for(i=0;i<SIZE;i++)
 		{
 			fputs(str[i],fp);
-			fputs("\n",fp);
-			printf("%s\n",str[i]);
+			//fputs("\n",fp);
+			//printf("%s\n",str[i]);
+			fputs(str[i],stdout);
 		}
 
 		return 0;

@@ -22,7 +22,8 @@ int main()
 		int i;
 
 		printf("请输入%d个学生信息:\n",SIZE);
-
+		printf("学号 姓名 年龄 地址:\n");
+			
 		for(i=0;i<SIZE;i++)
 		{
 				scanf("%d %s %d %s",&stu[i].number,stu[i].name,&stu[i].age,stu[i].addr);
@@ -33,13 +34,20 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 保存结构体数组到文件
+ * 
+ * @param p 结构体数组
+ * @param size  结构体数组大小
+ */
 void save(struct Student *p,int size)
 {
 		FILE *fp;
 		int i;
+		char *fileName = "./stu.dat";
 
 		//打开文件
-		if((fp = fopen("./stu.dat","wb")) == NULL)
+		if((fp = fopen(fileName,"wb")) == NULL)
 		{
 				printf("打开文件错误!");
 				return;
@@ -51,7 +59,7 @@ void save(struct Student *p,int size)
 				{
 						printf("写入错误!!\n");
 				}
-				p++;
+				p++;//下一个结构体元素
 		}
 		fclose(fp);
 }

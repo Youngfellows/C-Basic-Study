@@ -1,21 +1,32 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#define SIZE 128
+
 int main()
 {
 		FILE *in,*out;
 		char ch;
-		char infile[30];
-		char outfile[30];
+		char infile[SIZE];
+		char outfile[SIZE];
+		char *pin,*pout;
+		pin = infile;
+		pout = outfile;
 
 		printf("请输入要复制文件的名字:");
-		scanf("%s",infile);
+		//scanf("%s",infile);
+		scanf("%s",pin);
 
+		
 		printf("输出要保存文件的名字:");
-		scanf("%s",outfile);
+		getchar();//消耗回车
+		//scanf("%s",outfile);
+		fgets(pout,SIZE,stdin);
+		
 
 		//打开文件
-		if((in = fopen(infile,"r")) == NULL)
+		//if((in = fopen(infile,"r")) == NULL)
+		if((in = fopen(pin,"r")) == NULL)
 		{
 			printf("打开文件错误!!\n");
 			exit(0);

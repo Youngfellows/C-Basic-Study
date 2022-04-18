@@ -25,7 +25,7 @@ int main()
 		int i;
 
 		printf("请输入%d个学生信息:\n",SIZE);
-
+		printf("学号 姓名 年龄 地址:\n");	
 		for(i=0;i<SIZE;i++)
 		{
 				scanf("%d %s %d %s",&stu[i].number,stu[i].name,&stu[i].age,stu[i].addr);
@@ -43,9 +43,10 @@ void save(struct Student *p,int size)
 {
 		FILE *fp;
 		int i;
+		char *fileName = "./stu.dat";
 
 		//打开文件
-		if((fp = fopen("./stu.dat","wb")) == NULL)
+		if((fp = fopen(fileName,"wb")) == NULL)
 		{
 				printf("打开文件错误!");
 				return;
@@ -64,10 +65,11 @@ void save(struct Student *p,int size)
 
 void read()
 {
+		char *fileName = "./stu.dat";
 		struct Student stu[SIZE];
 		FILE *fp;
 		int i;
-		if((fp = fopen("./stu.dat","rb")) == NULL)
+		if((fp = fopen(fileName,"rb")) == NULL)
 		{
 				printf("打开文件错误!\n");
 				return;
@@ -75,7 +77,7 @@ void read()
 
 		for(i=0;i<SIZE;i++)
 		{
-
+				//读取一行信息,赋值给结构体数组元素
 				if(	fread(&stu[i],sizeof(struct Student),1,fp) == 1)
 				{
 						printf("%5d %-15s %4d %-15s\n",stu[i].number,stu[i].name,stu[i].age,stu[i].addr);
