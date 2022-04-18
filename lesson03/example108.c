@@ -15,12 +15,12 @@ struct Student
 
 int main()
 {
-		//指向结构体数组得指针
+		//指向结构体数组的指针
 		struct Student stu[LEN] = 
 		{{10010,"张无忌",'M',89.5},{10011,"赵敏",'F',99.0},{10012,"周芷若",'F',88.0}};
 		struct Student *p;
 		int i;
-		p = stu;//指针变量p指向数组的首元素
+		p = stu;//结构体指针变量p,指向结构体数组的首元素
 		printf("学号\t姓名\t性别\t分数\n");
 		for(i=0;i<LEN;i++,p++)
 		{

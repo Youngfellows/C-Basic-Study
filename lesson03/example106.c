@@ -4,7 +4,7 @@
 
 #define SIZE 30
 #define LEN 3
-#define TOTAL_COUNT 10
+#define TOTAL_COUNT 10 //总共10张票
 
 struct Person
 {
@@ -15,12 +15,13 @@ struct Person
 
 int main()
 {
+		//投票选举
 		struct Person leader[LEN] = {{"chen",0},{"zhang",0},{"wang",0}};
 		int i,j;
-		char leader_name[SIZE];
-		for(i=0;i<TOTAL_COUNT;i++)
+		char leader_name[SIZE];//姓名
+		for(i=0;i<TOTAL_COUNT;i++)//10张票
 		{
-			printf("请输入您要投票人名字:");
+			printf("请输入您要投票人名字chen/zhang/wang:\n");
 			//fgets(leader_name,SIZE,stdin);
 			//fputs(leader_name,stdout);
 			scanf("%s",leader_name);

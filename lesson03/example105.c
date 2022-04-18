@@ -13,6 +13,7 @@ struct Student
 
 int main()
 {
+		//定义一个结构体数组
 		struct Student stu[LEN] = 
 		{{1000,"小明",78.8},
 				{1001,"小花",88.5},
@@ -27,7 +28,7 @@ int main()
 		//选择排序
 		for(i=0;i<LEN-1;i++)
 		{	
-			max = i;
+			max = i;//记录最大的行号
 			for(j=i+1;j<LEN;j++)
 			{
 				if(stu[max].score < stu[j].score)
