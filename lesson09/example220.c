@@ -17,7 +17,7 @@ void print(struct Student stu[]);
 
 int main()
 {
-		struct Student stu[N];
+		struct Student stu[N];//结构体数组
 		printf("请输入%d个学生信息:\n",N);
 		input(stu);
 		printf("学生成绩信息如下:\n");
@@ -25,6 +25,11 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 输入结构体数组信息
+ * 
+ * @param stu 学生结构体数组
+ */
 void input(struct Student stu[])
 {
 		int i;
@@ -45,6 +50,11 @@ void input(struct Student stu[])
 		}
 }
 
+/**
+ * @brief 打印结构体数组信息
+ * 
+ * @param stu 学生结构体数组
+ */
 void print(struct Student stu[])
 {
 		int i;

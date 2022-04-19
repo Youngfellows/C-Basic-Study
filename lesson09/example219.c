@@ -25,6 +25,13 @@ int main()
 		return 0;
 }
 
+
+/**
+ * @brief 是否是闰年
+ * 
+ * @param date 时间结构体
+ * @return int 
+ */
 int leap(struct Date date)
 {
 		if((date.year % 4 == 0 && date.year % 100 != 0) || date.year % 400 == 0)
@@ -34,6 +41,13 @@ int leap(struct Date date)
 		return 0;
 }
 
+
+/**
+ * @brief 指定日期是一年中的第x天
+ * 
+ * @param date 时间结构体
+ * @return int 返回一年中的第x天
+ */
 int _days(struct Date date)
 {
 		int day_tab[LEN] = {0,31,28,31,30,31,30,31,31,30,31,30,31};

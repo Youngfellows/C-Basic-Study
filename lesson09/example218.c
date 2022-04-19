@@ -35,6 +35,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 是否是闰年
+ * 
+ * @param date 时间结构体
+ * @return int 
+ */
 int leap(struct Date date)
 {
 		if((date.year % 4 == 0 && date.year % 100 != 0) || date.year % 400 == 0)
