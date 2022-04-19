@@ -47,7 +47,7 @@ void method2()
 			}
 			if(i == 3 && j == 1)
 			{
-				break;
+				break;//结束内层的for循环
 			}
 			printf("%d*%d=%d\t",i,j,i*j);
 		}
@@ -67,7 +67,8 @@ void method3()
 			}
 			if(i == 3 && j == 1)
 			{
-				continue;
+				printf("\t");
+				continue;//结束本次循环,继续下次循环
 			}
 			printf("%d*%d=%d\t",i,j,i*j);
 		}
