@@ -28,7 +28,7 @@ int main()
 		int *pnum;//指向学号的指针变量
 		float *pscore;//指向分数的指针变量
 		float *paver;//指向平均成绩的指针变量
-		char (*pcourse)[LEN];//指向一维数组的指针变量
+		char (*pcourse)[LEN];//指向一维数组的指针变量,数组中的每一个元素是char [LEN],即是字符串
 
 		pcourse = course;
 		input_course(pcourse,N);
@@ -54,6 +54,13 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 输入五门功课的名称
+ * 
+ * @param pcourse 指针数组,指向一个二维数组的每一行
+ *
+ * @param len 二维数组的行数
+ */
 void input_course(char (*pcourse)[LEN],int len)
 {
 		int i;
@@ -81,6 +88,14 @@ void print_course(char (*pcourse)[LEN],int len)
 		printf("\n");
 }
 
+/**
+ * @brief 输入学号和成绩
+ * 
+ * @param pnum 学号数组
+ * @param pscore 成绩数组
+ * @param m 
+ * @param n 
+ */
 void input_number_2_score(int *pnum,float *pscore,int m,int n)
 {
 		int *ptnum = pnum;

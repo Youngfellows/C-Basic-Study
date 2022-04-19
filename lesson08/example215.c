@@ -4,7 +4,7 @@
 
 int main()
 {
-		//通过数组来引用字符串
+		//通过指针数组来引用字符串
 		char * month_name[LEN] = {"January","February","March","April","May","June","July",
 				"August","September","October","November","December"};
 

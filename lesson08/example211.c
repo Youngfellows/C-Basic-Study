@@ -45,6 +45,12 @@ void print(int *p,int m)
 	printf("\n");
 }
 
+/**
+ * @brief 倒置数组元素
+ * 
+ * @param p 数组元素的首地址
+ * @param m 数组大小
+ */
 void sort(int *p,int m)
 {
 	int i;

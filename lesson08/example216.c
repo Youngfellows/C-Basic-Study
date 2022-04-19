@@ -11,7 +11,7 @@ int main()
 		int i;
 		char str[M][LEN];//二维字符数组
 		char *pstr[M];//指针数组,数组中每个元素存放的是一个字符串的首地址
-		char **p;//指向指针的指针
+		char **p;//指向指针的指针,二级指针
 
 		//将第i个字符串的首地址赋值给指针数组pstr的第i个元素
 		for(i = 0; i < M; i++)
@@ -45,6 +45,11 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 
+ * 
+ * @param p 二级指针,p是指向char *指针的指针变量
+ */
 void sort(char **p)
 {
 		int i;

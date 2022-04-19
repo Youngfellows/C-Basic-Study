@@ -26,6 +26,7 @@ int main()
 				pdata[i] = &data[i];
 		}
 
+		//为数组元素赋值,通过指针数组间接赋值
 		for(i = 0; i < n; i++)
 		{
 			printf("data[%d]=",i);
