@@ -11,7 +11,7 @@ int main()
 		char *p1,*p2,*p;
 		p1 = s1;
 		p2 = s2;
-		p = s;
+		p = s;//字符型指针变量p,指向字符串s
 		
 		printf("请输入字符串s1:\n");
 		fgets(p1,N,stdin);
@@ -25,7 +25,13 @@ int main()
 		return 0;
 }
 
-
+/**
+ * @brief 拼接字符串
+ * 
+ * @param s1 字符串s1
+ * @param s2 字符串s1
+ * @param s 拼接后的字符串s
+ */
 void concatenate(char *s1,char *s2,char *s)
 {
 		int i,j;

@@ -27,6 +27,13 @@ int main()
 	putchar('\n');
 }
 
+/**
+ * @brief 将一个整数转化为字符串
+ * 
+ * @param num 整数
+ * @param s 字符串
+ * @param len 转换后的字符串长度
+ */
 void convert(int num,char *s,int *len){
 	int i;
 	char ch[2];

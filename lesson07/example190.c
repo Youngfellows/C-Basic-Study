@@ -24,6 +24,11 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 冒泡排序
+ * 
+ * @param s 字符串
+ */
 void bubble_sort(char *s)
 {
 	int i,j;

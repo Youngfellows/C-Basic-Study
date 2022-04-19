@@ -60,6 +60,14 @@ void print2(int array[M][N],int row,int column)
 		}
 }
 
+/**
+ * @brief 数组转置
+ * 
+ * @param array N*M数组
+ * @param row 行数
+ * @param column 列数
+ * @param new_array 返回M*N数组
+ */
 void convert(int array[N][M],int row,int column,int new_array[M][N])
 {
 	int i,j;

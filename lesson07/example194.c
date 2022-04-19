@@ -18,8 +18,8 @@ void search_by_number(struct Employee *pemployee,int len,long *num,struct Employ
 
 int main()
 {
-		struct Employee employees[N];
-		struct Employee *p;
+		struct Employee employees[N];//结构体数组
+		struct Employee *p;//结构体指针变量p,p指向结构体数组employees
 		long number;
 		struct Employee employee;
 		p = employees;
@@ -106,6 +106,14 @@ void sort(struct Employee *pemployee,int len)
 		}
 }
 
+/**
+ * @brief 查找指定工号的员工
+ * 
+ * @param pemployee 结构体数组
+ * @param len 数组长度
+ * @param num 工号
+ * @param em 指定工号的员工指针变量
+ */
 void search_by_number(struct Employee *pemployee,int len,long *num,struct Employee *em)
 {
 		printf("number:%ld\n",*num);

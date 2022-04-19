@@ -19,6 +19,14 @@ int main()
 
 		return 0;
 }
+
+/**
+ * @brief 求最大公约数
+ * 
+ * @param u 
+ * @param v 
+ * @return int 
+ */
 int greatest(int u,int v)
 {
 	int temp;
@@ -40,6 +48,14 @@ int greatest(int u,int v)
 	return v;
 }
 
+/**
+ * @brief 最小公倍数
+ * 
+ * @param u 
+ * @param v 
+ * @param great 
+ * @return int 
+ */
 int least(int u,int v,int great)
 {
 	return (u * v) / great;

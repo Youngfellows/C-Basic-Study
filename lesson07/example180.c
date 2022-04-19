@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-#define OK_PRIME -1
-#define NO_PRIME 0
+#define OK_PRIME -1 //是素数
+#define NO_PRIME 0 //不是素数
 
 int prime(int *num);
 
@@ -25,6 +25,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 判断一个数是否是素数
+ * 
+ * @param num 传递指针变量,即地址
+ * @return int 
+ */
 int prime(int *num)
 {
 		int flag = OK_PRIME;

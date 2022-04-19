@@ -78,6 +78,12 @@ int longest(char *s,int *start,int *leng)
 		return place;
 }
 
+/**
+ * @brief 是否是字母
+ * 
+ * @param ch 
+ * @return int 
+ */
 int alphabetic(char ch)
 {
 		if(ch >= 'A' && ch <= 'Z' || ch >= 'a' && ch <= 'z')

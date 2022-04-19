@@ -9,7 +9,7 @@ int main()
 		char *p1,*p2,*p;
 		p1 = s1;
 		p2 = s2;
-		p = p2;
+		p = p2;//字符型指针变量p指向字符串s2
 
 		printf("请输入字符串s1:\n");
 		fgets(s1,N,stdin);

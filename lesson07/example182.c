@@ -25,6 +25,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 转置字符串
+ * 
+ * @param s 字符串
+ * @return char* 返回转换后的字符串首地址
+ */
 char * inverse(char *s)
 {
 		printf("字符串长度:%ld\n",strlen(s));

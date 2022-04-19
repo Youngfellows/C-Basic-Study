@@ -7,6 +7,7 @@ void smaller_than_zero(float a,float b,float disc,float *p,float *q);
 
 int main()
 {	
+		//编译: gcc example179.c -lm
 		float a,b,c;//系数
 		float x1,x2;//根
 		float disc;//判别式
@@ -32,6 +33,7 @@ int main()
 
 		return 0;
 }
+
 void greater_than_zero(float a,float b,float disc,float *x1,float *x2)
 {
 		*x1 = (-b + sqrt(disc)) / (2 * a);

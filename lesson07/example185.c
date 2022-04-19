@@ -20,6 +20,12 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 拷贝元音字符
+ * 
+ * @param s1 字符串
+ * @param s 返回拷贝后的元音字符串
+ */
 void  cpy(char *s1,char *s)
 {
 		int i,j;
