@@ -13,7 +13,7 @@ int main()
 		//对字符串进行排序
 		//1. 用指向一维数组的指针做函数参数
 		char str[M][N];
-		char (*p)[N];
+		char (*p)[N];//指向一维数组的指针变量p,一维数组中的每一个元素是char[N],数组
 		p = str;
 		printf("请输入%d个字符串:\n",M);
 		input(str,M,N);

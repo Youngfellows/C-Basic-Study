@@ -39,6 +39,12 @@ void sort(int *p1,int *p2,int *p3)
 
 }
 
+/**
+ * @brief 交换两个指针变量存储的值
+ * 
+ * @param p1 
+ * @param p2 
+ */
 void swap(int *p1,int *p2)
 {
 	int temp;

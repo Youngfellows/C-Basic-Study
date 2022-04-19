@@ -18,7 +18,12 @@ int main()
 		return 0;
 }
 
-
+/**
+ * @brief 获取字符串的长度
+ * 
+ * @param s 字符串
+ * @param len 字符串的长度
+ */
 void length(char *s,int *len)
 {
 		int i = 0;

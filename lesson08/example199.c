@@ -53,7 +53,12 @@ void sort(char *s1,char *s2,char *s3)
 		}
 }
 
-
+/**
+ * @brief 交换两个字符串的值
+ * 
+ * @param s1 
+ * @param s2 
+ */
 void swap(char *s1,char *s2)
 {
 		char temp[BUFFER_SIZE];

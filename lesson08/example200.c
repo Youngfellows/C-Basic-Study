@@ -48,12 +48,12 @@ void change_max_min_value(int *number,int len)
 		int *min;//指向最小元素
 		int *p;
 		int temp;
-		max = min = number;
+		max = min = number;//第一个元素是最大/最小
 		for(p = number + 1; p < number + len;p++)
 		{
 			if(*p > *max)
 			{
-					max = p;
+					max = p;//记录最大值元素
 			}
 		}
 
@@ -71,7 +71,8 @@ void change_max_min_value(int *number,int len)
 				min = p;
 			}
 		}
-
+		
+		//交互最小值
 		temp = number[len - 1];
 		number[len - 1] = *min;
 		*min = temp;

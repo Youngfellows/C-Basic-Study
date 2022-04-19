@@ -31,6 +31,13 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 拷贝s1字符串的n个字符到s2字符串
+ * 
+ * @param s1 
+ * @param s2 
+ * @param n 开始拷贝字符位置
+ */
 void copynstr(char *s1,char *s2,int n)
 {
 		int i;

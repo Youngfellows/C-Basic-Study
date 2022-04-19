@@ -54,9 +54,10 @@ void sort(char s[][N],int m,int n)
 		{
 				for(j = i; j < m; j++)
 				{
+						//字符串比较
 						if(strcmp(s[j],s[j+1]) > 0)
 						{
-								strcpy(p,s[j]);
+								strcpy(p,s[j]);//交换字符串
 								strcpy(s[j],s[j+1]);
 								strcpy(s[j+1],p);
 						}

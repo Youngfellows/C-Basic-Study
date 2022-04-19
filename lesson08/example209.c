@@ -13,11 +13,11 @@ int main()
 		//对字符串进行排序
 		//1. 用指针数组处理
 		char str[M][N];
-		char *p[M];
+		char *p[M];//p[M]是一个数组,数组中的每一个元素是char * 类型,即数组中的每一个元素指向字符串
 		int i;
 		for(i = 0; i < M; i++)
 		{
-			p[i] = str[i];
+			p[i] = str[i];//对指针数组中的每一个元素赋值,即指向二维数组的每一行
 		}
 		
 		printf("请输入%d个字符串:\n",M);
@@ -50,6 +50,13 @@ void print(char *s[N],int m,int n)
 		}
 }
 
+/**
+ * @brief 对二维数组进行排序
+ * 
+ * @param s 指针数组作为函数的参数
+ * @param m 
+ * @param n 
+ */
 void sort(char *s[M],int m,int n)
 {
 		int i,j;
