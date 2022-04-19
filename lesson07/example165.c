@@ -57,6 +57,16 @@ void print(int array[ROW][COLUMN],int row,int column)
 		}
 }
 
+/**
+ * @brief 输出一个二维数组中的鞍点:即该数在该位置行上最大.列上最小
+ * 
+ * @param array 二维数组
+ * @param row 行
+ * @param column 列 
+ * @param pi 行位置
+ * @param pj 列位置
+ * @return int 返回鞍点数
+ */
 int saddle_number(int array[ROW][COLUMN],int row,int column,int *pi,int *pj)
 {
 		int i,j,k;//行列坐标

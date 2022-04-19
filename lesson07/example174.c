@@ -12,6 +12,8 @@ int main()
 		printf("请输入字符串s1:\n");
 		fgets(s1,N1,stdin);
 
+		//getchar();//吃掉一个换行
+
 		printf("请输入字符串s2:\n");
 		fgets(s2,N2,stdin);
 

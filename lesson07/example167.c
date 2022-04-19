@@ -60,6 +60,12 @@ void print(int *p,int len)
 		printf("\n");
 }
 
+/**
+ * @brief 冒泡排序
+ * 
+ * @param p int *指针变量指向数组元素
+ * @param len 
+ */
 void sort(int *p,int len)
 {
 		int *pt = p;
@@ -86,6 +92,15 @@ void sort(int *p,int len)
 		}
 }
 
+/**
+ * @brief 二分查找
+ * 
+ * @param p int *指针变量指向数组元素
+ * @param len 数组大小
+ * @param number 查找的元素
+ * @param pos 查找元素的位置
+ * @return int 返回查找到的元素
+ */
 int binary_search(int *p,int len,int number,int *pos)
 {
 		int *pt = p;

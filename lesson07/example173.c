@@ -6,12 +6,12 @@ int main()
 {
 		int i;
 		int n;
-		char origin[N];//原文
+		char origin[N];//原文,字符串
 		char *pori;
 		char *ptran;
 
-		pori = origin;
-		ptran = pori;
+		pori = origin;//字符型指针变量pori指向字符串origin
+		ptran = pori;//字符型指针变量ptran指向字符串origin
 
 		printf("请输入原文:\n");
 		fgets(pori,N,stdin);

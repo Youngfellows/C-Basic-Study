@@ -8,7 +8,7 @@ void print_text(char text[ROW][COLUMN],int row,int column);
 void statistics(char text[ROW][COLUMN],int row,int column,int *uppe,int *low,int *dig,int *spa,int *oth);
 
 int main()
-{
+{		//定义一个字符串数组
 		char text[ROW][COLUMN];
 		int upper;
 		int lower;
@@ -29,7 +29,7 @@ void input_text(char text[ROW][COLUMN],int row,int column)
 
 		for(i = 0; i < row; i++)
 		{
-				fgets(text[i],column,stdin);
+				fgets(text[i],column,stdin);//输入一个字符串
 		}
 }
 
@@ -38,10 +38,22 @@ void print_text(char text[ROW][COLUMN],int row,int column)
 		int i,j;
 		for(i = 0; i < row; i++)
 		{
-				fputs(text[i],stdout);
+				fputs(text[i],stdout);//打印字符串
 		}
 }
 
+/**
+ * @brief 对字符串数组进行统计
+ * 
+ * @param text 字符串数组
+ * @param row 行数
+ * @param column 列数
+ * @param uppe 大写字母个数
+ * @param low 小写字母个数
+ * @param dig 数字个数
+ * @param spa 空格个数
+ * @param oth 其他字符个数
+ */
 void statistics(char text[ROW][COLUMN],int row,int column,int *uppe,int *low,int *dig,int *spa,int *oth)
 {
 		int i,j;

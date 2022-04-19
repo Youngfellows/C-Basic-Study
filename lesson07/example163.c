@@ -42,7 +42,12 @@ void print(int *p,int size)
 	printf("\n");
 }
 
-
+/**
+ * @brief 交换数组元素
+ * 
+ * @param p 数组元素,指向数组元素的int *指针变量
+ * @param size 
+ */
 void change(int *p,int size)
 {
 		int i,temp;

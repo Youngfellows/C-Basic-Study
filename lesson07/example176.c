@@ -29,6 +29,13 @@ int main()
 		return 0;
 }
 
+/**
+ * @brief 比较两个字符串
+ * 
+ * @param s1 字符串s1
+ * @param s2 字符串s2
+ * @return int 比较结果
+ */
 int strcmp(char *s1,char *s2)
 {
 		int result;

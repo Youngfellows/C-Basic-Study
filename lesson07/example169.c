@@ -10,7 +10,7 @@ void statistics(char (*text)[COLUMN],int row,int column,int *uppe,int *low,int *
 int main()
 {
 		char ctext[ROW][COLUMN];
-		char (*text)[COLUMN];
+		char (*text)[COLUMN];//指向一维数组的指针变量,数组中的每一个元素都是字符串,也就是字符数组char[COLUMN]
 		int upper;
 		int lower;
 		int digit;
@@ -53,7 +53,7 @@ void statistics(char (*text)[COLUMN],int row,int column,int *uppe,int *low,int *
 		upper = lower = digit = space = other = 0;
 		for(i = 0; i < row; i++)
 		{
-				pc = text[i];
+				pc = text[i];//第i行
 				for(; pc < text[i] + column && *pc != '\n'; pc++)
 				{
 						ch = *pc;

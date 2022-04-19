@@ -59,6 +59,12 @@ void print(int array[],int len)
 		printf("\n");
 }
 
+/**
+ * @brief 冒泡排序
+ * 
+ * @param array 数组
+ * @param len 数组长度
+ */
 void sort(int array[],int len)
 {
 		int i,j,temp;
@@ -84,6 +90,15 @@ void sort(int array[],int len)
 		}
 }
 
+/**
+ * @brief 二分查找
+ * 
+ * @param array 数组元素
+ * @param len 数组大小
+ * @param number 查找的数
+ * @param pos 查找到的位置
+ * @return int 返回查找到的数
+ */
 int binary_search(int array[],int len,int number,int *pos)
 {
 		int start;//起始位置

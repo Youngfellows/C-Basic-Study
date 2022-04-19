@@ -6,15 +6,15 @@ int main()
 {
 		int i;
 		int n;
-		char origin[N];//原文
-		char tran[N];//密码
+		char origin[N];//原文字符串
+		char tran[N];//密码字符串
 		char *pori;
 		char *ptran;
 		char *pt;
 
-		pori = origin;
-		ptran = tran;
-		pt = ptran;
+		pori = origin;//字符型指针变量pori指向字符串origin
+		ptran = tran;//字符型指针变量pori指向字符串tran
+		pt = ptran;//字符型指针变量pt指向字符串tran
 
 		printf("请输入原文:\n");
 		fgets(pori,N,stdin);
